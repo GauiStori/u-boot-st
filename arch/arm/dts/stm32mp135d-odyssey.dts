@@ -19,8 +19,8 @@
 	compatible = "st,stm32mp135d-odyssey", "st,stm32mp135f-dk", "st,stm32mp135";
 
 	aliases {
-		ethernet0 = &eth1;
-		ethernet1 = &eth2;
+		ethernet0 = &ethernet1;
+		ethernet1 = &ethernet2;
 		serial0 = &uart4;
 		serial1 = &usart2;
 	};
@@ -217,7 +217,7 @@
 	status = "okay";
 };
 
-&eth1 {
+&ethernet1 {
 	status = "okay";
 	pinctrl-0 = <&eth1_rmii_pins_a>;
 	pinctrl-1 = <&eth1_rmii_sleep_pins_a>;
@@ -244,7 +244,7 @@
 	};
 };
 
-&eth2 {
+&ethernet2 {
 	status = "okay";
 	pinctrl-0 = <&eth2_rmii_pins_a>;
 	pinctrl-1 = <&eth2_rmii_sleep_pins_a>;
@@ -447,7 +447,7 @@
 	status = "disabled";
 };
 
-&sram {
+&sram1 {
 	dma_pool: dma-sram@0 {
 		reg = <0x0 0x4000>;
 		pool;
