@@ -510,7 +510,7 @@
 };
 
 &usbphyc_port0 {
-	phy-supply = <&scmi_vdd_usb>;
+	phy-supply = <&v3v3_ao>;
 	st,current-boost-microamp = <1000>;
 	st,decrease-hs-slew-rate;
 	st,tune-hs-dc-level = <2>;
@@ -533,7 +533,7 @@
 };
 
 &usbphyc_port1 {
-	phy-supply = <&scmi_vdd_usb>;
+	phy-supply = <&v3v3_ao>;
 	st,current-boost-microamp = <1000>;
 	st,decrease-hs-slew-rate;
 	st,tune-hs-dc-level = <2>;
